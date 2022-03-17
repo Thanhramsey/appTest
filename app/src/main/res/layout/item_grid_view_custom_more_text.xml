@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/surround_item"
+    android:orientation="vertical"
+    android:padding="@dimen/dip05"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dip05"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/title_check_no"
+            android:textSize="@dimen/font_normal"
+            />
+
+        <TextView
+            android:id="@+id/text_name_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="@color/blue2"
+            android:textSize="@dimen/font_20" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dip05"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_room_no_"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/text_room_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dip05"
+            android:textSize="@dimen/font_large" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dip05"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_table_no"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/text_id_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/dip05"
+            android:textSize="@dimen/font_large" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/red"
+        android:textStyle="normal"
+        android:textSize="@dimen/font_big" />
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="horizontal"-->
+        <!---->
+        <!--&gt;-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/title_amount"-->
+            <!--android:textSize="@dimen/font_normal"-->
+            <!--android:layout_marginRight="@dimen/dip05"-->
+            <!--/>-->
+
+        <!---->
+    <!--</LinearLayout>-->
+</LinearLayout>

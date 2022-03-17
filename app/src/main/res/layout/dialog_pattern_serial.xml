@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/dip15"
+    android:layout_marginRight="@dimen/dip15"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="5dp"
+    android:orientation="vertical">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/blue2"
+        app:errorTextAppearance="@style/text_in_layout_error_hint_Style"
+        app:hintTextAppearance="@style/MyAppearance2">
+
+        <EditText
+            android:id="@+id/edtAddressServer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue2"
+            android:hint="@string/txt_intput_address_server"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:shadowColor="@color/blue2"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/blue2"
+        app:errorTextAppearance="@style/text_in_layout_error_hint_Style"
+        app:hintTextAppearance="@style/MyAppearance2">
+
+        <EditText
+            android:id="@+id/edtPattern"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue2"
+            android:hint="@string/txt_intput_pattern"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:shadowColor="@color/blue2"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/blue2"
+        app:errorTextAppearance="@style/text_in_layout_error_hint_Style"
+        app:hintTextAppearance="@style/MyAppearance2">
+
+        <EditText
+            android:id="@+id/edtSerial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue2"
+            android:hint="@string/txt_intput_serial"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:shadowColor="@color/blue2"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

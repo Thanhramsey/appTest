@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Trang chủ"></item>
+    </group>
+    <item android:title="Danh sách khách hàng">
+        <menu>
+            <item
+                android:id="@+id/nav_ds_telecom"
+                android:icon="@drawable/ic_play_arrow_black_24dp"
+                android:title="Hóa đơn viễn thông" />
+            <item
+                android:id="@+id/nav_ds_electric"
+                android:icon="@drawable/ic_play_arrow_black_24dp"
+                android:title="Hóa đơn tiền điện" />
+            <item
+                android:id="@+id/nav_ds_water"
+                android:icon="@drawable/ic_play_arrow_black_24dp"
+                android:title="Hóa đơn tiền nước" />
+            <item
+                android:id="@+id/nav_ds_environment"
+                android:icon="@drawable/ic_play_arrow_black_24dp"
+                android:title="Hóa đơn môi trường" />
+            <item
+                android:id="@+id/nav_ds_television"
+                android:icon="@drawable/ic_play_arrow_black_24dp"
+
+                android:title="Hóa đơn truyền hình" />
+        </menu>
+    </item>
+    <!--android:icon="@drawable/ic_menu_slideshow"-->
+    <item android:title="Hệ thống">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_search"
+                    android:icon="@drawable/ic_action_search"
+                    android:title="Tra cứu" />
+                <item
+                    android:id="@+id/nav_guide"
+                    android:icon="@drawable/ic_directions_black_24dp"
+                    android:title="Hướng dẫn sử dụng" />
+                <item
+                    android:id="@+id/nav_setting"
+                    android:icon="@drawable/ic_settings_black_24dp"
+                    android:title="Cấu hình" />
+                <item
+                    android:id="@+id/nav_exit"
+                    android:icon="@drawable/ic_power_settings_new_black_24dp"
+                    android:title="Thoát" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

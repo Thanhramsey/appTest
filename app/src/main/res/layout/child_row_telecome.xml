@@ -1,0 +1,206 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dip07"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dip05"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Số biên nhận:"
+            android:textColor="@color/bg_left_navigation_item"
+            android:textSize="@dimen/font_normal"
+            android:layout_marginRight="@dimen/dip03"
+            />
+
+        <TextView
+            android:id="@+id/txtNumberInvoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="1"
+            android:textColor="@color/blue2"
+            android:textSize="@dimen/font_normal"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dip07"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_cycle"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtUnitConsume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Tháng"
+                    android:textColor="@color/bg_left_navigation_item"
+                    android:textSize="@dimen/font_big"/>
+
+                <TextView
+                    android:id="@+id/txtContentConsume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/font_very_big"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip10"
+                android:background="@color/green_selected"
+                android:gravity="center"
+                android:padding="@dimen/dip05"
+                android:text="983.338 VNĐ"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_large"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dip07">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip03"
+                android:text="Các dịch vụ sử dụng trong tháng:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal"/>
+
+            <ListView
+                android:id="@+id/listDataService"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_view_list_service"
+                android:minHeight="@dimen/dip70"
+                >
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dip03"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:text="Tiền dịch vụ:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal"/>
+
+                <TextView
+                    android:id="@+id/txtSumService"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="right"
+                    android:text="983.338 VNĐ"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dip03"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:text="Thuế VAT:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal"/>
+
+                <TextView
+                    android:id="@+id/txtTax"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="right"
+                    android:text="983.338 VNĐ"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip01"
+                android:background="@color/borderline"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dip03"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:text="Tổng tiền:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal"/>
+
+                <TextView
+                    android:id="@+id/txtSumMoney"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="right"
+                    android:text="983.338 VNĐ"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/font_large"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

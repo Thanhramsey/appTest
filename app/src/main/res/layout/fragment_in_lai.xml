@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout_fragment_inlai"
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InLaiFragment">
+
+    <TextView
+        android:id="@+id/txtMauSo"
+        android:text="Mẫu số:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtMauSo"
+        android:layout_below="@+id/txtMauSo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtKyHieu"
+        android:layout_below="@+id/edtMauSo"
+        android:text="Ký hiệu:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtKyHieu"
+        android:layout_below="@+id/txtKyHieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:id="@+id/containerTuSo"
+        android:layout_below="@+id/edtKyHieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtTuSo"
+            android:layout_centerVertical="true"
+            android:text="Từ số:"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtTuSo"
+            android:inputType="number"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/containerDenSo"
+        android:orientation="horizontal"
+        android:layout_below="@+id/containerTuSo"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtDenSo"
+            android:layout_weight="3"
+            android:text="Đến số:"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtDenSo"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnInLai"
+        android:text="In lại biên lai"
+        android:layout_below="@+id/containerDenSo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

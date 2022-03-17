@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:minHeight="@dimen/dip50"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:paddingLeft="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip03"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/text_inv_no"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/txtInvNo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/red_focused"
+                android:textSize="@dimen/font_large"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip03"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/text_customer_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal" />
+            <TextView
+                android:id="@+id/txtNameCus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/blue2"
+                android:textSize="@dimen/font_large"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip03"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/text_customer_code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal" />
+            <TextView
+                android:id="@+id/txtCusCode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip03"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/text_amount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/orange2"
+                android:textSize="@dimen/font_large"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip03"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/text_address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal"
+                android:maxLines="4"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/tag_red"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

@@ -1,0 +1,540 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vnpt.staffhddtpos58.DetailsActivityFragment"
+    tools:showIn="@layout/activity_details">
+
+    <!-- Details progress -->
+    <ProgressBar
+        android:id="@+id/details_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scrollView_details_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layout_details_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dip05"
+            android:paddingTop="@dimen/dip05"
+            android:paddingRight="@dimen/dip05"
+            android:paddingBottom="@dimen/dip05">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dip20"
+                android:background="@drawable/border_goc_tron"
+                android:padding="@dimen/dip10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dip03"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/txt_code_cus"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal" />
+
+                        <TextView
+                            android:id="@+id/txt_code_cus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_name"
+                            android:textColor="@color/orange_color"
+                            android:textSize="@dimen/font_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dip03"
+                            android:gravity="left|center_vertical"
+                            android:text="Họ tên:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal" />
+
+                        <TextView
+                            android:id="@+id/txtName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/txt_name"
+                            android:textColor="@color/blue2"
+                            android:textSize="@dimen/font_normal"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dip03"
+                            android:gravity="left|center_vertical"
+                            android:text="Điện thoại:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal" />
+
+                        <TextView
+                            android:id="@+id/txtPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/phone"
+                            android:drawablePadding="@dimen/dip03"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/txt_name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:scrollbars="none">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dip03"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/txt_address"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal" />
+
+                        <TextView
+                            android:id="@+id/txtAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_collapse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dip03"
+                                android:gravity="left|center_vertical"
+                                android:text="@string/txt_code_tax_cus"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal" />
+
+                            <TextView
+                                android:id="@+id/txt_code_tax_cus"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_name"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dip03"
+                                android:gravity="left|center_vertical"
+                                android:text="@string/txt_cus_bank_no"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal" />
+
+                            <TextView
+                                android:id="@+id/txt_cus_bank_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_name"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dip03"
+                                android:gravity="left|center_vertical"
+                                android:text="@string/txt_cus_bank_name"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal" />
+
+                            <TextView
+                                android:id="@+id/txt_cus_bank_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_name"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btn_collapse"
+                    android:layout_width="@dimen/dip25"
+                    android:layout_height="@dimen/dip25"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:maxWidth="@dimen/dip20"
+                    android:maxHeight="@dimen/dip20"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/toggle_collapse_blue" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_goc_tron"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_customer_debit1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dip05"
+                        android:layout_marginLeft="@dimen/dip05"
+                        android:layout_marginBottom="@dimen/dip05"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_type_invoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dip03"
+                            android:layout_marginBottom="@dimen/dip05"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/font_big" />
+
+                        <TextView
+                            android:id="@+id/txt_pattern_serial_num_inv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dip05"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/font_normal" />
+
+                        <TextView
+                            android:id="@+id/txt_status_payment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dip05"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/font_normal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dip05"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dip03"
+                                android:text="@string/text_arising_date"
+                                android:textColor="@color/gray_1"
+                                android:textSize="@dimen/font_normal" />
+
+                            <TextView
+                                android:id="@+id/txt_arising_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dip03"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dip05"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dip03"
+                                android:text="@string/text_kind_of_payment"
+                                android:textColor="@color/gray_1"
+                                android:textSize="@dimen/font_normal" />
+
+                            <TextView
+                                android:id="@+id/txt_kind_of_payment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dip03"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/ln_kind_of_fee"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dip05"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dip03"
+                                android:text="@string/text_kind_of_fee"
+                                android:textColor="@color/gray_1"
+                                android:textSize="@dimen/font_normal" />
+
+                            <TextView
+                                android:id="@+id/txt_kind_of_fee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dip03"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/dip05"
+                        android:paddingBottom="@dimen/dip05">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="@string/title_product_service"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_normal"
+                            android:layout_marginLeft="@dimen/dip05"
+                            android:layout_marginBottom="@dimen/dip05"/>
+
+                        <ListView
+                            android:id="@+id/listDataProInv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fastScrollEnabled="true"
+                            android:groupIndicator="@null"
+                            android:scrollbarSize="4dip"
+                            android:background="@drawable/border_goc_tron"
+                            android:smoothScrollbar="true"></ListView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/dip05"
+                        android:paddingBottom="@dimen/dip05">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/gray"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/dip05">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dip03"
+                                android:layout_weight="6"
+                                android:gravity="right"
+                                android:text="Thuế suất GTGT (VAT rate):"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal" />
+
+                            <TextView
+                                android:id="@+id/txt_vat_rate"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:gravity="right"
+                                android:textColor="@color/orange"
+                                android:textSize="@dimen/font_large"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/gray"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/dip05"
+                            android:paddingBottom="@dimen/dip05">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dip03"
+                                android:layout_weight="6"
+                                android:gravity="right"
+                                android:text="Tiền thuế GTGT (VAT amount):"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal" />
+
+                            <TextView
+                                android:id="@+id/txt_vat_amount"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:gravity="right"
+                                android:text="983.338 VNĐ"
+                                android:textColor="@color/orange"
+                                android:textSize="@dimen/font_large"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/gray"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/dip05"
+                            android:paddingBottom="@dimen/dip05">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dip03"
+                                android:layout_weight="6"
+                                android:gravity="right"
+                                android:text="Tổng cộng tiền thanh toán (Grand total) :"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_normal" />
+
+                            <TextView
+                                android:id="@+id/txt_amount"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:gravity="right"
+                                android:text="983.338 VNĐ"
+                                android:textColor="@color/orange"
+                                android:textSize="@dimen/font_large"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_amount_in_words"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/gray"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/dip05"
+                            android:paddingBottom="@dimen/dip05"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/font_large"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dip10"
+                    android:paddingRight="@dimen/dip10">
+
+                    <Button
+                        android:id="@+id/btnCollectingMoney"
+                        android:layout_width="@dimen/dip220"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_radius_blue"
+                        android:text="@string/txt_collecting_money"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnPrintInvoiceNotification"
+                        android:layout_width="@dimen/dip220"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dip10"
+                        android:layout_marginBottom="@dimen/dip10"
+                        android:background="@drawable/btn_radius_blue"
+                        android:text="@string/txt_view_print_invoice_previous"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnViewInvoicePrevious"
+                        android:layout_width="@dimen/dip220"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dip10"
+                        android:background="@drawable/btn_radius_blue"
+                        android:text="@string/txt_view_invoice_previous"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

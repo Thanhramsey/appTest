@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">POS58 TT VHTT Pleiku</string>
+    <string name="type_app_invoice">HÓA ĐƠN ĐIỆN TỬ</string>
+    <string name="type_app_receipt">BIÊN LAI ĐIỆN TỬ</string>
+    <string name="text_system">Hệ thống</string>
+    <string name="title_infor_forgot_password">Số điện thoại hồi phục mật khẩu:</string>
+    <string name="no_connect_to_server">Không thể kết nối tới server!</string>
+    <string name="app_detail_name">Trung tâm văn hóa thể thao TP Pleiku</string>
+    <string name="cancel">Hủy bỏ</string>
+    <string name="OK">Đồng ý</string>
+    <string name="dialog_no_button">Hủy bỏ</string>
+    <string name="dialog_yes_button">Đồng ý</string>
+    <string name="message">Thông báo</string>
+    <string name="list_have">Danh sách hiện có:</string>
+    <string name="text_invoice">hóa đơn</string>
+    <string name="ngay">Ngày</string>
+    <string name="gio">Giờ</string>
+    <string name="back">Trở lại</string>
+    <string name="txt_pattern">Mẫu số:</string>
+    <string name="txt_pattern_">Mẫu số:</string>
+    <string name="txt_serial">Ký hiệu:</string>
+    <string name="txt_tungay">Từ ngày:</string>
+    <string name="txt_denngay">Đến ngày:</string>
+    <string name="txt_serial_">Ký hiệu:</string>
+    <string name="txt_tungay_">Từ ngày:</string>
+    <string name="txt_denngay_">Đến ngày:</string>
+    <string name="txt_intput_pattern">Nhập mẫu số</string>
+    <string name="txt_intput_serial">Nhập ký hiệu</string>
+    <string name="txt_intput_address_server">Nhập địa chỉ server hệ thống</string>
+    <string name="txt_please_intput_address_server">Vui lòng nhập địa chỉ server hệ thống!</string>
+    <string name="txt_infor_config_system_invoices">Cập nhật cấu hình hệ thống thành công!</string>
+    <string name="txt_validate_time">Ngày giờ không hợp lệ! Xin vui lòng kiểm tra và nhập lại!</string>
+    <string name="txt_search_by_namecustomer_code_no">Tìm kiếm theo tên khách hàng, mã khách hàng, số biên lai...</string>
+    <string name="txt_input_pattern_serial">Thông tin cấu hình hệ thống hóa đơn</string>
+    <string name="text_loading_data_invoice">Đang tải dữ liệu biên lai...</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Tên đăng nhập</string>
+    <string name="action_try_again">Thử lại!</string>
+    <string name="prompt_password">Mật khẩu</string>
+    <string name="text_forgot_password"><u>Quên mật khẩu</u></string>
+    <string name="action_sign_in">Đăng nhập</string>
+    <string name="action_sign_in_short">Đăng nhập</string>
+    <string name="action_sign_in_failed">Đăng nhập thất bại! Xin vui lòng thử lại!</string>
+    <string name="action_sign_in_failed_account">Tên đăng nhập hoặc mật khẩu không đúng!</string>
+    <string name="txt_send">Gửi đi</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">Vui lòng gán quyền đọc và tạo lên bộ nhớ.</string>
+    <string name="txt_internet_good"> Tốt! Ứng dụng đang kết nối đang kết nối internet! </string>
+    <string name="txt_internet_bad">Xin lỗi! Ứng dụng không thể kết nối internet</string>
+
+    <string name="title_name_product_service">Tên sản phẩm và dịch vụ:</string>
+    <string name="title_outlet">Cửa hàng<br></br><i>(Outlet)</i></string>
+    <string name="title_table_no">Số biên lai<br></br><i>(Inv.No)</i></string>
+    <string name="title_check_no">Số check<br></br><i>(Check No)</i></string>
+    <string name="title_cus_code">Mã khách hàng<br></br><i>(Cus. Code)</i></string>
+    <string name="title_room_no_">Phòng số<br /><i>(Room No)</i></string>
+    <string name="title_room_no">Phòng số<br /><i>(Room No)</i></string>
+    <string name="title_sum_money_product">Cộng tiền hàng /<i> Sub Total</i></string>
+    <string name="title_fee_service">Phí phục vụ /<i> Service Charge (5%)</i></string>
+    <string name="title_vat_amount_30">Phí tiêu thụ đặc biệt /<i> Special tax (30%)</i></string>
+    <string name="title_vat_gtgt">Thuế suất GTGT /<i> VAT rate (%)</i></string>
+    <string name="title_money_vat_gtgt">Tiền thuế GTGT /<i> VAT Amount</i></string>
+    <string name="title_total_amount">Tổng cộng tiền thanh toán /<i> Total Amount</i></string>
+    <string name="title_amount_in_words">Viết bằng chữ /<i> Amount in words</i>:</string>
+    <string name="title_status_sign">Trạng thái xác nhận:</string>
+    <string name="title_status_not_payment">Chưa thanh toán</string>
+    <string name="title_status_paymented">Đã thanh toán</string>
+    <string name="title_product_service">Hàng hóa, dịch vụ:</string>
+    <string name="text_kind_of_fee">Phí/ loại phí: </string>
+    <string name="text_discount">Chiết khấu</string>
+    <string name="text_vat_rate">Thuế GTGT</string>
+
+    <string name="title_image_sign_customer">Hình ảnh chữ ký khách hàng</string>
+    <string name="title_image_sign_customer_">Hình ảnh chữ ký</string>
+    <string name="text_status_comfirmed_customer_signed">Khách hàng đã ký xác nhận</string>
+    <string name="text_status_comfirmed_customer_not_signed">Khách hàng chưa ký xác nhận</string>
+    <string name="txt_update_singature_customer_successful">Cập nhật chữ ký khách hàng thành công!</string>
+    <string name="txt_update_singature_customer_failed">Thất bại! Cập nhật chữ ký khách hàng không thành công!</string>
+    <string name="text_process_err_sys">Lỗi xảy ra trong quá trình xử lý!</string>
+    <string name="txt_logout">Đăng xuất</string>
+    <string name="title_activity_main">Trang chủ</string>
+    <string name="tilte_forgot_password">Quên mật khẩu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="text_proccessing">Đang xử lý...</string>
+    <string name="hint_content_reason">Nội dung lý do</string>
+
+    <string name="action_chart">Biểu đồ sử dụng</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="txtProccessing">Đang xử lý...</string>
+    <string name="txt_name">TT VHTT Pleiku</string>
+    <string name="txt_sodienthoai">(+84) 24 3826 6919</string>
+    <string name="action_choice_calendar">Lịch biểu</string>
+    <string name="txt_capbac">Nhân viên</string>
+    <string name="txt_content_phone">Số điện thoại</string>
+    <string name="content_forget_password">Số điện thoại:</string>
+    <string name="txt_cus_bank_no">Tài khoản NH:</string>
+    <string name="txt_cus_bank_name">Ngân hàng:</string>
+
+    <string name="title_activity_search">Tìm kiếm hóa đơn</string>
+    <string name="title_activity_details">Chi tiết thanh toán</string>
+    <string name="title_activity_content_invoice">Nội dung thanh toán</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_quick_search">Tìm kiếm nhanh </string>
+    <string name="title_activity_guide_user">Hướng dẫn sử dụng</string>
+    <string name="txt_search">Tìm kiếm</string>
+    <string name="title_activity_settings">Cấu hình</string>
+    <string name="txt_address">Địa chỉ:</string>
+    <string name="txt_code_cus">Mã khách hàng:</string>
+    <string name="txt_code_tax_cus">Mã số thuế:</string>
+    <string name="txt_cmnd">CMND:</string>
+    <string name="txt_cus_name">Tên đơn vị:</string>
+    <string name="txt_code_tax">Mã số thuế:</string>
+    <string name="txt_detail_invoice">Chi tiết hóa đơn</string>
+    <string name="txt_save_infor_success">Lưu thông tin thành công</string>
+    <string name="txt_save_infor_not_success">Lưu thông tin không thành công!</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="android_dropdown_outlet_arrays">
+        <item>Chọn Outlet</item>
+        <item>La Terrasse</item>
+        <item>Outlet 1</item>
+        <item>Outlet 2</item>
+    </string-array>
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <!-- Action Bar action items -->
+    <string name="action_search">Tìm kiếm</string>
+    <string name="action_share">Chia sẻ</string>
+    <string name="action_print">In ra</string>
+    <string name="action_location_found">Tìm thấy vị trí</string>
+    <string name="action_refresh">Cập nhật mới</string>
+    <string name="action_contacts">Danh bạ</string>
+    <string name="action_help">Trợ giúp</string>
+    <string name="action_check_updates">Kiểm tra cập nhật mới</string>
+    <!---->
+    <string name="search_hint">Type and Search</string>
+    <string name="txt_confirm_sign">Xác nhận và ký tên</string>
+    <string name="txt_collecting_money">Thu tiền</string>
+    <string name="txt_view_invoice_previous">Lịch sử thanh toán</string>
+    <string name="txt_view_print_invoice_previous">IN THÔNG BÁO CƯỚC</string>
+    <string name="txt_btn_return_invoice">Thu hồi biên nhận</string>
+    <string name="title_activity_previous_invoice">Lịch sử thanh toán</string>
+    <string name="title_name_customer_">Tên khách hàng:</string>
+    <string name="title_name_customer">Tên khách hàng</string>
+    <string name="title_phone_customer">Số điện thoại:</string>
+    <string name="title_address_customer">Địa chỉ:</string>
+
+    <string name="title_activity_show_certified_image">Hình ảnh chứng thực</string>
+    <string name="title_activity_singnature_record">Âm thanh chứng thực</string>
+    <string name="title_activity_signature_manual">(Sign) Chữ ký của khách hàng</string>
+
+    <string name="action_clear">Clear</string>
+    <string name="action_circle">Draw Circle</string>
+    <string name="action_overlay">Draw Overlay</string>
+    <string name="action_polygon">Draw Polygon</string>
+    <string name="action_traffic">Toggle Traffic</string>
+    <string name="action_cycle_map_type">Cycle Map Type</string>
+
+    <string name="dialog_play_services_unavailable">Google Play Services are unavailable.</string>
+    <string name="dialog_download_play_services">Download Play Services</string>
+    <string name="dialog_close_program">Close Program</string>
+    <string name="txt_filter">Lọc theo</string>
+    <string name="txt_sort">Sắp xếp</string>
+    <string name="text_no_data">Không có dữ liệu</string>
+    <string name="txt_list_table">Danh sách biên lai</string>
+    <string name="txt_list_table_no_signed">Danh sách biên lai đã thu</string>
+    <string name="billType_prompt">Chọn loại</string>
+    <string name="txt_table_no">Số biên lai</string>
+    <string name="txt_check_no">Số check</string>
+    <string name="title_amount">Tổng tiền:</string>
+    <!--lookup-->
+    <string name="lblBillLookup">TRA CỨU HÓA ĐƠN</string>
+    <string name="lblBillNumber">Số hóa đơn</string>
+    <string name="lblBillType">Loại hóa đơn</string>
+    <string name="lblBillTime_from">Từ ngày</string>
+    <string name="lblBillTime_to">Đến ngày</string>
+    <string name="lblBillSearch">Tìm kiếm</string>
+
+    <!-- String of bluetooth printer -->
+    <string name="title_activity_printer">Kết nối máy in</string>
+    <string name="scanning">Đang tìm kiếm thiết bị...</string>
+    <string name="select_device">Chọn thiết bị kết nối </string>
+    <string name="none_paired">Không có thiết bị nào được kết nối</string>
+    <string name="none_found">Không tìm thấy thiết bị</string>
+    <string name="no_printer_connected">Không có máy in nào để kết nối</string>
+    <string name="title_paired_devices">Đã kết nối thiết bị</string>
+    <string name="title_other_devices">Các thiết bị phù hợp khác</string>
+    <string name="button_scan">Tìm kiếm thiết bị</string>
+    <string name="connect_bluetooth_device_btn">Kết nối thiết bị Bluetooth</string>
+    <string name="print_btn">In hóa đơn</string>
+    <string name="option_btn">Print Option</string>
+    <string name="bt_inquiry_btn">Inquiry Status</string>
+    <string name="quit_btn">Quit</string>
+    <string name="title_connecting">Đang kế nối...</string>
+    <string name="title_connected_to">Đã kết nối: </string>
+    <string name="bt_not_enabled_leaving">Bluetooth chưa được bật</string>
+    <string name="print_line">"--------------------------------"  </string>
+    <string name="alert_title">Thiết lập lại kết nối</string>
+    <string name="alert_message">Bạn có muốn thiết lập lại kết nối?</string>
+    <string name="alert_btn_positive">Đồng ý</string>
+    <string name="alert_btn_negative">Không</string>
+    <string name="contentdesctiption">Mô tả nội dung</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="connect_fail">Không thể kết nối được thiết bị</string>
+    <string name="connect_lost">Mất kết nối đến thiết bị</string>
+    <string name="txt_choose_outlet">Chọn cửa hàng</string>
+
+    <string name="connected">connected to a device</string>
+    <string name="not_connected">You are not connected to a device</string>
+
+    <string name="che_protocol">Protocol</string>
+    <string name="title_activity_statictis">THỐNG KÊ</string>
+    <!--Push to refresh-->
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+    <!--End push to refresh-->
+    <string name="text_guide_user" translatable="false">- Bước 1: Kết nối ghép đôi điện thoại với máy in ở phần Cài đặt Bluetooth của điện thoại. Mã mặc định là 1234.\n
+    - Bước 2: Sau khi ghép đôi thành công, vào app nhấn vào biểu tượng máy in ở góc dưới bên phải để thực hiện kết nối. Chọn đúng tên máy in (ER-58AI, POS-58BUS).\n
+    - Bước 3: Nhấn nút kiểm tra \"Check thiết bị\" xem máy in đã sẵn sàng hay chưa.\n
+    - Bước 4: Sau khi kiểm tra đã kết nối thành công, tiến hành nhập số lượng biên lai cần xuất.\n
+    - Bước 5: Nhấn nút \"Xuất biên lai\". \n
+    * Lưu ý: Luôn \"Check thiết bị\" trước khi in để tránh xảy ra lỗi.</string>
+    <string name="title_activity_login2">Đăng nhập</string>
+    <string name="txt_language_english">Tiếng Anh</string>
+    <string name="txt_language_vietnamese">Tiếng Việt</string>
+    <string name="txt_selected_language">Chọn ngôn ngữ</string>
+    <string name="txt_please_selected_language">Vui lòng chọn ngôn ngữ!</string>
+    <string name="txt_please_selected_outlet">Vui lòng chọn outlet!</string>
+    <string name="txt_selected_outlet">Chọn outlet</string>
+    <string name="txt_language_already_selected">Ngôn ngữ đã được chọn!</string>
+    <string name="txt_sign_out_app">Bạn muốn thoát khỏi chương trình?</string>
+    <string name="txt_action_confirm_payment">Bạn muốn thực hiện thao tác này?</string>
+    <string name="txt_confirm_sign_app">Bạn thực sự muốn ký tên cho khách hàng? \n Vui lòng kiểm tra nếu cần điền tên khách và số phòng!</string>
+    <string name="text_warning_sign_input_infor">Vui lòng nhập đầy đủ thông tin chữ ký của khách!</string>
+    <string name="text_input_pattern_serial">Vui lòng nhập đầy đủ thông tin mẫu số và ký hiệu hóa đơn. Vui lòng liên hệ ban quản trị để được hỗ trợ.</string>
+    <string name="text_input_pattern">Vui lòng nhập đầy đủ thông tin ký hiệu hóa đơn!</string>
+    <string name="text_input_serial">Vui lòng nhập đầy đủ thông tin mẫu số hóa đơn!</string>
+    <!--xxxccc-->
+    <string name="signature_view_name">signature_view_name</string>
+    <string name="signature_view_room">signature_view_room</string>
+    <string name="signature_view_signature">signature_view_signature</string>
+    <!-- thêm value String GLI-->
+    <string name="text_insert_customers">Thêm khách hàng</string>
+    <string name="text_search">Tra cứu</string>
+    <string name="text_term">Kỳ cước</string>
+    <string name="text_statistics">Thống kê</string>
+    <string name="text_guide">Hướng dẫn sử dụng</string>
+    <string name="text_settings">Cấu hình</string>
+    <string name="text_customer_name">Tên khách hàng:</string>
+    <string name="text_customer_code">Mã khách hàng:</string>
+
+    <string name="text_address">Địa chỉ: </string>
+    <string name="text_inv_no">Số hóa đơn: </string>
+    <string name="text_amount">Số tiền: </string>
+    <string name="text_arising_date">Ngày phát hành: </string>
+    <string name="text_kind_of_payment">Hình thức thanh toán: </string>
+
+    <string name="text_cus_name">Đơn vị nộp phí</string>
+    <string name="text_cus_address">Địa chỉ</string>
+    <string name="text_cus_phone">Số điện thoại</string>
+    <string name="text_cus_code">Mã số</string>
+    <string name="txt_add_kind_of_payment">Hình thức thanh toán (Kind of Payment)</string>
+    <string name="text_fee">Phí/lệ phí</string>
+
+    <string name="kind_of_payment_tm">Thanh toán tiền mặt</string>
+    <string name="kind_of_payment_ck">Thanh toán chuyển khoản</string>
+    <string name="kind_of_payment_tmck">Hình thức thanh toán tiền mặt hoặc chuyển khoản</string>
+
+    <string name="content_null">Please input content first.</string>
+    <string name="success_connect">Successfully connected</string>
+    <string name="in_mau_test">In mẫu test</string>
+    <string name="ngat_ket_noi">Ngắt kết nối</string>
+    <string name="error_empty_input">Vui lòng nhập số lượng biên lại cần xuất</string>
+    <!-- end -->
+    <!--main_activity-->
+    <string name="connect">Search for and connect a Bluetooth printer</string>
+    <string name="txt_content">&quot;&quot;</string>
+    <string name="choose_paper_width">Paper width:</string>
+    <string name="width1">58mm</string>
+    <string name="width2">80mm</string>
+    <string name="printhex">HEX</string>
+    <string name="btnSend">Send Data</string>
+    <string name="btn_test">Print Test</string>
+    <string name="btn_prtbmp">Print Picture</string>
+    <string name="printpicture">Graphical Print</string>
+    <string name="chosecommand">Please select instruction</string>
+    <string name="btnClose">Close</string>
+    <string name="contentdescription"></string>
+    <string name="btn_prttable">Print Form</string>
+    <string name="Smallticketprinting">Small Ticket Printing</string>
+    <string name="btn_prtcode">Print 1D/2D Codebar</string>
+    <string name="btn_scqr">Generate QR Code Print</string>
+    <string name="btn_dyca">Turn on the camera</string>
+    <string name="input">Please enter a print!</string>
+    <string name="choose_printcoding"></string>
+    <string name="big5">BIG5</string>
+    <string name="thai">Thai</string>
+    <string name="kor">Korean</string>
+    <string name="gbk12">Simplified</string>
+
+    <!--  DeviceListActivity -->
+    <!--    <string name="scanning">Scanning Device&#8230;</string>-->
+    <!--    <string name="select_device">Select the connected device</string>-->
+    <!--    <string name="none_paired">No matching devices</string>-->
+    <!--    <string name="none_found">No device found</string>-->
+    <!--    <string name="title_paired_devices">Match equipment</string>-->
+    <!--    <string name="title_other_devices">Other useful equipment</string>-->
+    <!--    <string name="button_scan">Scanning device</string>-->
+
+    <!--  Message -->
+    <string name="msg_state">Input Error!</string>
+    <string name="empty1">Input is empty, in the text box to enter the content to be converted &#8230;</string>
+    <string name="empty">Input is empty</string>
+    <!--    <string name="not_connected">Please connect a Bluetooth printer</string>-->
+    <!--    <string name="bt_not_enabled_leaving">Bluetooth does not start, quit the program</string>-->
+    <!--    <string name="title_connecting">connecting…</string>-->
+    <!--    <string name="title_connected_to">connected: </string>-->
+    <string name="title_not_connected">Is not connected</string>
+    <string name="Connecting">It is connected to a Bluetooth printer</string>
+    <string name="msg_statev1">Without a picture</string>
+    <string name="strLang">en</string>
+    <string name="camer">No pictures</string>
+    <string name="msg_error">Input errors, please check!</string>
+</resources>

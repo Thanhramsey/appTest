@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/text_custom_one_text"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/text_view_width"
+    android:layout_height="@dimen/text_view_height"
+    android:background="@drawable/surround_item"
+    android:gravity="center">
+</TextView>

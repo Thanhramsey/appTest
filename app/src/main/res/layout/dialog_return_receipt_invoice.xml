@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="5dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip01"
+        android:background="@color/borderline" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Lý do:"
+        android:textColor="@color/bg_left_navigation_item"
+        android:textSize="@dimen/font_big"
+        android:layout_marginTop="@dimen/dip03"
+        android:layout_marginLeft="@dimen/dip05"
+        />
+    <EditText
+        android:id="@+id/edt_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dip100"
+        android:maxHeight="@dimen/dip150"
+        android:background="@drawable/border_editext"
+        android:hint="@string/hint_content_reason"
+        android:gravity="left|top"
+        android:imeActionId="@+id/edt_reason"
+        android:imeActionLabel="@string/hint_content_reason"
+        android:imeOptions="actionDone"
+        android:inputType="textLongMessage"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip01"
+        android:background="@color/borderline" />
+
+</LinearLayout>
+

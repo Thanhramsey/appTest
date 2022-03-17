@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="@dimen/dip07"
+    android:id="@+id/container_item"
+    >
+
+    <ImageView
+        android:id="@+id/imageTag"
+        android:layout_width="@dimen/dip32"
+        android:layout_height="@dimen/dip32"
+        android:layout_marginRight="3dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tvtNameAuthorize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Tên khách hàng:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_normal" />
+</LinearLayout>

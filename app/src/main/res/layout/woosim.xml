@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/che_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10px"
+            android:text="@string/che_protocol" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_open"
+            android:layout_width="170px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CONNECTION" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="170px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DISCONNECTION" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_print2inch"
+            android:layout_width="170px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PRINT 2INCH" />
+
+        <Button
+            android:id="@+id/btn_print3inch"
+            android:layout_width="170px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PRINT 3INCH" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_msr23"
+            android:layout_width="170px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MSR 23 TRACK" />
+
+        <Button
+            android:id="@+id/btn_msr123"
+            android:layout_width="170px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MSR 123 TRACK" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_cardcancel"
+            android:layout_width="170px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MSR CANCEL" />
+        <!--<Button android:id="@+id/btn_finish" -->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="170px" -->
+        <!--android:layout_height="wrap_content" -->
+        <!--android:text="FINISH"/>-->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FINISH" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="1Track" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="2Track" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="3Track" />
+    </LinearLayout>
+
+</LinearLayout>

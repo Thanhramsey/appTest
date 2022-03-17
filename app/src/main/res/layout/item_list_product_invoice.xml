@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/dip02">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        tools:ignore="Suspicious0dp">
+
+        <TextView
+            android:id="@+id/txtProdName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:maxLines="3"
+            android:textColor="@color/blue2"
+            android:textSize="@dimen/font_normal"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            tools:ignore="Suspicious0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:orientation="horizontal"
+                tools:ignore="Suspicious0dp">
+
+                <TextView
+                    android:id="@+id/txtProdPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dip02"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/gray_1"
+                    android:textSize="@dimen/font_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dip02"
+                    android:gravity="left|center_vertical"
+                    android:text="X"
+                    android:textColor="@color/gray_1"
+                    android:textSize="@dimen/font_normal" />
+
+                <TextView
+                    android:id="@+id/txtProdQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dip02"
+                    android:gravity="left|center_vertical"
+                    android:text="1"
+                    android:textColor="@color/gray_1"
+                    android:textSize="@dimen/font_normal" />
+
+                <TextView
+                    android:id="@+id/txtProdUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/gray_1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtProdAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="right|center_vertical"
+                android:text="1000000"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_big" />
+        </LinearLayout>
+        <!--layout Chiết khấu-->
+        <LinearLayout
+            android:id="@+id/ln_prod_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dip05"
+            tools:ignore="Suspicious0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip02"
+                android:gravity="left|center_vertical"
+                android:text="@string/text_discount"
+                android:textColor="@color/gray_1"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/txtProdDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip02"
+                android:gravity="left|center_vertical"
+                android:text="@string/text_discount"
+                android:textColor="@color/gray_1"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/txtProdDiscountAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="right|center_vertical"
+                android:text="1000000"
+                android:textColor="@color/gray_1"
+                android:textSize="@dimen/font_normal" />
+        </LinearLayout>
+        <!--Layout thuế-->
+        <LinearLayout
+            android:id="@+id/ln_prod_vat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dip05"
+            tools:ignore="Suspicious0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip02"
+                android:gravity="left|center_vertical"
+                android:text="@string/text_vat_rate"
+                android:textColor="@color/gray_1"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/txtProdVATRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip02"
+                android:gravity="left|center_vertical"
+                android:text="@string/text_discount"
+                android:textColor="@color/gray_1"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/txtProdVATAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="right|center_vertical"
+                android:text="1000000"
+                android:textColor="@color/gray_1"
+                android:textSize="@dimen/font_normal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dip15">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:text="Các hình thức gửi xác nhận thanh toán cho khách hàng:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_large" />
+
+    <CheckBox
+        android:id="@+id/cbxSendMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_normal" />
+
+    <CheckBox
+        android:id="@+id/cbxSendApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:text="Ứng dụng người dùng"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip01"
+        android:background="@color/borderline" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nhắn tin SMS"
+            android:textSize="@dimen/font_normal" />
+
+        <RadioButton
+            android:id="@+id/rdPrintPaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="In ra máy in"
+            android:textSize="@dimen/font_normal" />
+
+
+    </RadioGroup>
+
+</LinearLayout>
+

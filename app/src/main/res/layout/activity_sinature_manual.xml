@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_sinature_manual"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vnpt.staffhddtpos58.SinatureManualActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="@drawable/border_default"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/border_default"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal|top"
+                android:background="@drawable/border_default"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dip03"
+                    android:gravity="left|center_horizontal"
+                    android:text="@string/signature_view_name"
+                    android:textColor="@color/btn_blue_default"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_big" />
+
+                <EditText
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:textColor="@color/black"
+                    android:hint="@string/signature_view_name"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:background="@color/black"-->
+                <!--/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|top"
+                android:background="@drawable/border_default"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dip03"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/signature_view_room"
+                    android:textColor="@color/btn_blue_default"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_big" />
+
+                <EditText
+                    android:id="@+id/txtNameRoomNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:textColor="@color/black"
+                    android:hint="@string/signature_view_room"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--<View-->
+            <!--android:layout_width="1px"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/black"-->
+            <!--/>-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:background="@drawable/border_default"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip03"
+                android:gravity="center"
+                android:text="@string/signature_view_signature"
+                android:textColor="@color/btn_blue_default"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_big" />
+            <com.vnpt.view.SignatureView
+                android:id="@+id/viewCusSingature"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

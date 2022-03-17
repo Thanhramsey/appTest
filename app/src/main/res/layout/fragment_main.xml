@@ -1,0 +1,344 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_frament_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vnpt.staffhddtpos58.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_infor_invoice"
+        android:layout_above="@+id/layout_tool_bottom"
+        tools:ignore="NotSibling"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <GridView
+        android:id="@+id/gridTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_sell_gird_view_margin_top"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/activity_sell_gird_view_vertical_spacing"
+        android:numColumns="auto_fit"
+        android:paddingTop="@dimen/dip10"
+        android:visibility="gone"
+        android:paddingRight="@dimen/dip10"
+        android:paddingLeft="@dimen/dip10"
+        android:columnWidth="@dimen/dip150"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/activity_sell_gird_view_vertical_spacing" />
+    <com.costum.android.widget.PullAndLoadListView
+        android:id="@+id/lvData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_tool_bottom"
+        android:layout_below="@+id/layout_infor_invoice"
+        android:background="@color/white"
+        android:cacheColorHint="@color/white"
+        android:listSelector="@drawable/list_selector"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:visibility="gone"
+        >
+
+    </com.costum.android.widget.PullAndLoadListView>
+    <RelativeLayout
+        android:id="@+id/layout_infor_invoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/gray_1"
+        android:paddingLeft="@dimen/dip05"
+        android:paddingRight="@dimen/dip05"
+        android:paddingTop="@dimen/dip05">
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dip05"
+            tools:ignore="UnknownId"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/txt_pattern_"
+                    android:textColor="#2b58a7"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/btnPattern"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="@string/txt_pattern"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/txt_serial_"
+                    android:textColor="#2b58a7"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/btnSerial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="@string/txt_serial"
+                    android:inputType="text" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/btnSeachInvoice"
+            android:layout_width="@dimen/dip60"
+            android:layout_height="@dimen/dip60"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/layout1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/icon_find"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout_search1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout1"
+            android:layout_toLeftOf="@+id/btnSeachInvoice"
+            android:textColorHint="@color/blue2"
+            app:errorTextAppearance="@style/text_in_layout_error_hint_Style"
+            app:hintTextAppearance="@style/MyAppearance2">
+
+            <EditText
+                android:id="@+id/edtSearchCheckNoTableNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue2"
+                android:hint="@string/txt_search_by_namecustomer_code_no"
+                android:inputType="text"
+                android:maxLines="1"
+                android:shadowColor="@color/blue2"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout1"
+            android:layout_toLeftOf="@+id/btnSeachInvoice"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/txt_tungay_"
+                    android:textColor="#2b58a7"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/spnTuNgay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="@string/ngay"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/txt_denngay_"
+                    android:textColor="#2b58a7"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/spnDenNgay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="@string/ngay"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbarSearch"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/noDataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/barLayout"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_no" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/text_no_data" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_tool_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip40"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dip03"
+        android:paddingLeft="@dimen/dip05"
+        android:paddingRight="@dimen/dip05"
+        android:paddingTop="@dimen/dip03">
+
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_width="@dimen/dip30"
+            android:layout_height="@dimen/dip30"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dip03"
+            android:background="@drawable/filter"
+            />
+
+        <View
+            android:id="@+id/lineDevider"
+            android:layout_width="@dimen/dip01"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btnFilter"
+            android:background="@color/borderline"
+             />
+
+        <Button
+            android:id="@+id/btnSort"
+            android:layout_width="@dimen/dip30"
+            android:layout_height="@dimen/dip30"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dip03"
+            android:layout_toRightOf="@+id/lineDevider"
+            android:background="@drawable/sort_by_alphabet" />
+
+        <View
+            android:id="@+id/lineDevider2"
+            android:layout_width="@dimen/dip01"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btnSort"
+            android:background="@color/borderline" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lineDevider2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/list_have"
+                android:textColor="@color/defaultText"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txtSumItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/text_invoice"
+                android:textColor="@color/defaultText"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+

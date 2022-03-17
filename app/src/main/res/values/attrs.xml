@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+    <string-array name="billType_arrays">
+        <item>Tất cả</item>
+        <item>Điện</item>
+        <item>Nước</item>
+        <item>Viễn thông</item>
+    </string-array>
+    <declare-styleable name="CustomFontApp">
+        <attr name="font" format="string"/>
+        <attr name="textStyle" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="signature">
+        <attr name="enableSignature" format="boolean" />
+        <attr name="penSize" format="dimension"/>
+        <attr name="penColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomRow">
+        <attr format="string" name="name"/>
+        <attr format="string" name="count"/>
+    </declare-styleable>
+</resources>

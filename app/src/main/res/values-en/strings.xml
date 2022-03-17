@@ -1,0 +1,348 @@
+<resources>
+    <string name="text_system">System</string>
+    <string name="type_app_invoice">INVOICE</string>
+    <string name="type_app_receipt">RECEIPT</string>
+    <string name="no_connect_to_server">Couldn\'t connect to server!</string>
+    <string name="title_infor_forgot_password">Số điện thoại hồi phục mật khẩu:</string>
+    <string name="app_detail_name">Trung tâm văn hóa thể thao TP Pleiku</string>
+    <string name="cancel">Cancel</string>
+    <string name="OK">Ok</string>
+    <string name="dialog_no_button">Cancel</string>
+    <string name="dialog_yes_button">Ok</string>
+    <string name="message">Message</string>
+    <string name="list_have">List have:</string>
+    <string name="text_invoice">invoice</string>
+    <string name="ngay">Date</string>
+    <string name="gio">Time</string>
+    <string name="back">Back</string>
+    <string name="txt_pattern">Pattern</string>
+
+    <string name="txt_search_by_namecustomer_code_no">Search name customer, code, no invoice...</string>
+    <string name="txt_serial">Serial</string>
+    <string name="txt_tungay">From date</string>
+    <string name="txt_denngay">To date</string>
+    <string name="txt_pattern_">Pattern:</string>
+    <string name="txt_infor_config_system_invoices">Update configs systems successfully!</string>
+    <string name="txt_intput_pattern">Input pattern invoice</string>
+    <string name="txt_intput_serial">Input serial invoice</string>
+    <string name="txt_intput_address_server">Input address server system</string>
+    <string name="txt_please_intput_address_server">Please input address server system!</string>
+    <string name="txt_serial_">Serial:</string>
+    <string name="txt_tungay_">From date:</string>
+    <string name="txt_denngay_">To date:</string>
+    <string name="txt_validate_time">Datetime invoice invalid! Please input again!</string>
+    <string name="txt_internet_good">Good! Connected to Internet</string>
+    <string name="txt_internet_bad">Sorry! Not connected to internet</string>
+    <string name="txt_input_pattern_serial">Information config system invoices</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="text_forgot_password"><u>Forgot password?</u></string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_try_again">Try again!</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="action_sign_in_failed">Login failed! Please try again!</string>
+    <string name="action_sign_in_failed_account">Username or password incorrect!</string>
+    <string name="txt_send">Send</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">Vui lòng gán quyền đọc và tạo lên bộ nhớ.
+    </string>
+    <string name="title_name_product_service">Name product and service:</string>
+    <string name="title_outlet">Outlet:</string>
+    <string name="title_table_no">Table No:</string>
+    <string name="title_check_no">Check No:</string>
+    <string name="title_amount">Amount:</string>
+    <string name="title_cus_code">Cus. Code:</string>
+    <string name="title_room_no_">Room No:</string>
+    <string name="title_room_no">Room No</string>
+    <string name="title_sum_money_product"> Sub Total</string>
+    <string name="title_fee_service">Service Charge (5%)</string>
+    <string name="title_vat_amount_30"> Special tax (30%)</string>
+    <string name="title_vat_gtgt"> VAT rate (%)</string>
+    <string name="title_money_vat_gtgt">VAT Amount</string>
+    <string name="title_total_amount">Total Amount</string>
+    <string name="title_amount_in_words">Amount in words</string>
+    <string name="title_status_sign">Status confirmed:</string>
+    <string name="title_status_not_payment">Not payment</string>
+    <string name="title_status_paymented">Paymented</string>
+    <string name="title_product_service">Product, service:</string>
+    <string name="text_discount">Discount</string>
+    <string name="text_vat_rate">VAT Rate</string>
+
+    <string name="title_image_sign_customer">Image signature customer:</string>
+    <string name="title_image_sign_customer_">Image signature</string>
+    <string name="text_status_comfirmed_customer_signed">Confirmed</string>
+    <string name="text_status_comfirmed_customer_not_signed">Not confirmed</string>
+    <string name="title_activity_details">Details payment</string>
+    <string name="text_proccessing">Processing...</string>
+    <string name="text_loading_data_invoice">Loading data invoice...</string>
+    <string name="txtProccessing">Processing...</string>
+    <string name="txt_search">Search</string>
+    <string name="txt_logout">Logout</string>
+    <string name="text_input_pattern">Please input pattern invoice!</string>
+    <string name="text_input_serial">Please input serial invoice!</string>
+    <string name="text_input_pattern_serial">Please input pattern and serial correct. More information please contact administrator for support!</string>
+
+    <string name="title_activity_main">Home</string>
+    <string name="tilte_forgot_password">Quên mật khẩu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="hint_content_reason">Nội dung lý do</string>
+
+    <string name="action_chart">Biểu đồ sử dụng</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="txt_name">Sofitel Legend Metropole Hà Nội</string>
+    <string name="txt_sodienthoai">(+84) 24 3826 6919</string>
+    <string name="txt_capbac">Nhân viên</string>
+    <string name="txt_content_phone">Số điện thoại</string>
+    <string name="content_forget_password">Số điện thoại:</string>
+    <string name="txt_cus_bank_no">Customer BankNo:</string>
+    <string name="txt_cus_bank_name">BankName:</string>
+    <string name="title_activity_search">Tìm kiếm hóa đơn</string>
+
+    <string name="title_activity_content_invoice">Details invoice</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_quick_search">Tìm kiếm nhanh </string>
+    <string name="title_activity_guide_user">Hướng dẫn sử dụng</string>
+
+    <string name="title_activity_settings">Cấu hình</string>
+    <string name="txt_address">Address:</string>
+    <string name="txt_code_cus">Customercode:</string>
+    <string name="txt_code_tax_cus">Tax code:</string>
+    <string name="txt_cmnd">CMND:</string>
+    <string name="txt_cus_name">Company name:</string>
+    <string name="txt_code_tax">Tax code:</string>
+    <string name="txt_detail_invoice">Invoice details</string>
+    <string name="title_name_customer_">Customer name:</string>
+    <string name="title_name_customer">Customer name</string>
+    <string name="title_phone_customer">Phone:</string>
+    <string name="title_address_customer">Address:</string>
+    <string name="txt_confirm_sign">Confirm &amp; signature</string>
+    <!-- Strings related to Settings -->
+    <string name="txt_save_infor_success">Save successful!</string>
+    <string name="txt_save_infor_not_success">Save failed!</string>
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="android_dropdown_outlet_arrays">
+        <item>Choose Outlet</item>
+        <item>La Terrasse</item>
+        <item>Outlet 1</item>
+        <item>Outlet 2</item>
+    </string-array>
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <!-- Action Bar action items -->
+    <string name="action_search">Tìm kiếm</string>
+    <string name="action_share">Chia sẻ</string>
+    <string name="action_print">Printer</string>
+    <string name="action_location_found">Tìm thấy vị trí</string>
+    <string name="action_choice_calendar">Calendar</string>
+    <string name="action_refresh">Cập nhật mới</string>
+    <string name="action_contacts">Danh bạ</string>
+    <string name="action_help">Trợ giúp</string>
+    <string name="action_check_updates">Kiểm tra cập nhật mới</string>
+    <!---->
+    <string name="search_hint">Type and Search</string>
+
+    <string name="txt_collecting_money">Thu tiền</string>
+    <string name="txt_view_invoice_previous">Lịch sử thanh toán</string>
+    <string name="txt_view_print_invoice_previous">IN THÔNG BÁO CƯỚC</string>
+    <string name="txt_btn_return_invoice">Thu hồi biên nhận</string>
+    <string name="title_activity_previous_invoice">Lịch sử thanh toán</string>
+
+
+    <string name="title_activity_show_certified_image">Hình ảnh chứng thực</string>
+    <string name="title_activity_singnature_record">Âm thanh chứng thực</string>
+    <string name="title_activity_signature_manual">Signature of customer</string>
+
+    <string name="action_clear">Clear</string>
+    <string name="action_circle">Draw Circle</string>
+    <string name="action_overlay">Draw Overlay</string>
+    <string name="action_polygon">Draw Polygon</string>
+    <string name="action_traffic">Toggle Traffic</string>
+    <string name="action_cycle_map_type">Cycle Map Type</string>
+
+    <string name="dialog_play_services_unavailable">Google Play Services are unavailable.</string>
+    <string name="dialog_download_play_services">Download Play Services</string>
+    <string name="dialog_close_program">Close Program</string>
+    <string name="txt_filter">Lọc theo</string>
+    <string name="txt_sort">Sắp xếp</string>
+    <string name="text_no_data">No invoice!</string>
+    <string name="text_process_err_sys">Have error processing system! Please try again!</string>
+
+    <string name="txt_list_table">List invoices</string>
+    <string name="txt_list_table_no_signed">List invoices signed</string>
+    <string name="txt_table_no">Table No</string>
+    <string name="txt_check_no">Check No</string>
+
+    <string name="billType_prompt">Chọn loại</string>
+    <!--lookup-->
+    <string name="lblBillLookup">TRA CỨU HÓA ĐƠN</string>
+    <string name="lblBillNumber">Số hóa đơn</string>
+    <string name="lblBillType">Loại hóa đơn</string>
+    <string name="lblBillTime_from">Từ ngày</string>
+    <string name="lblBillTime_to">Đến ngày</string>
+    <string name="lblBillSearch">Tìm kiếm</string>
+
+    <!-- String of bluetooth printer -->
+    <string name="title_activity_printer">Kết nối máy in</string>
+    <string name="scanning">Đang tìm kiếm thiết bị...</string>
+    <string name="select_device">Chọn thiết bị kết nối </string>
+    <string name="none_paired">Không có thiết bị nào được kết nối</string>
+    <string name="none_found">Không tìm thấy thiết bị</string>
+    <string name="no_printer_connected">Không có máy in nào để kết nối</string>
+    <string name="title_paired_devices">Đã kết nối thiết bị</string>
+    <string name="title_other_devices">Các thiết bị phù hợp khác</string>
+    <string name="button_scan">Tìm kiếm thiết bị</string>
+    <string name="connect_bluetooth_device_btn">Kết nối thiết bị Bluetooth</string>
+    <string name="print_btn">In hóa đơn</string>
+    <string name="option_btn">Print Option</string>
+    <string name="bt_inquiry_btn">Inquiry Status</string>
+    <string name="quit_btn">Quit</string>
+    <string name="title_connecting">Đang kế nối...</string>
+    <string name="title_connected_to">Đã kết nối: </string>
+    <string name="bt_not_enabled_leaving">Bluetooth chưa được bật</string>
+    <string name="print_line">"--------------------------------"  </string>
+    <string name="alert_title">Thiết lập lại kết nối</string>
+    <string name="alert_message">Bạn có muốn thiết lập lại kết nối?</string>
+    <string name="alert_btn_positive">OK</string>
+    <string name="alert_btn_negative">No</string>
+    <string name="contentdesctiption">Mô tả nội dung</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="connect_fail">Không thể kết nối được thiết bị</string>
+    <string name="connect_lost">Mất kết nối đến thiết bị</string>
+    <string name="txt_choose_outlet">Choose Outlet</string>
+
+    <string name="connected">connected to a device</string>
+    <string name="not_connected">You are not connected to a device</string>
+
+    <string name="che_protocol">Protocol</string>
+    <string name="title_activity_statictis">THỐNG KÊ</string>
+    <!--Push to refresh-->
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+    <!--End push to refresh-->
+    <string name="title_activity_login2">Đăng nhập</string>
+    <string name="txt_language_english">English</string>
+    <string name="txt_language_vietnamese">Vietnamese</string>
+    <string name="txt_selected_language">Choose language</string>
+    <string name="txt_please_selected_language">Please choose language!</string>
+    <string name="txt_update_singature_customer_successful">Updated singature customer successful!</string>
+    <string name="txt_update_singature_customer_failed">Failed! Updated singature customer failed!</string>
+    <string name="txt_selected_outlet">Choose outlet</string>
+    <string name="txt_please_selected_outlet">Please choose outlet!</string>
+    <string name="txt_language_already_selected">Language already selected!</string>
+    <string name="txt_sign_out_app">Are you log out?</string>
+    <string name="txt_action_confirm_payment">Are you sure paymented for this invoice?</string>
+    <string name="txt_confirm_sign_app">Are you realy wanna sign? \n  Please check if requires fill client name and number room!</string>
+    <string name="text_warning_sign_input_infor">Please input sinature information!</string>
+    <string name="signature_view_name">signature_view_name</string>
+    <string name="signature_view_room">signature_view_room</string>
+    <string name="signature_view_signature">signature_view_signature</string>
+
+
+    <!-- thêm value String GLI-->
+    <string name="text_insert_customers">Insert customers</string>
+    <string name="text_search">Search</string>
+    <string name="text_term">Term</string>
+    <string name="text_statistics">Statistics</string>
+    <string name="text_guide">User guide</string>
+    <string name="text_settings">Settings</string>
+    <string name="text_customer_name">Customer name:</string>
+    <string name="text_customer_code">Customer code:</string>
+    <string name="text_address">Address: </string>
+    <string name="text_inv_no">Inv.No: </string>
+    <string name="text_amount">Amount: </string>
+    <string name="text_arising_date">Arising Date: </string>
+    <string name="text_kind_of_payment">Kind of Payment: </string>
+    <string name="text_kind_of_fee">Kind of Fee: </string>
+    <string name="text_cus_name">Đơn vị nộp phí</string>
+    <string name="text_cus_address">Địa chỉ</string>
+    <string name="text_cus_phone">Số điện thoại</string>
+    <string name="text_cus_code">Mã số</string>
+    <string name="txt_add_kind_of_payment">Hình thức thanh toán (Kind of Payment)</string>
+    <string name="text_fee">Phí/lệ phí</string>
+
+    <string name="kind_of_payment_tm">Thanh toán tiền mặt</string>
+    <string name="kind_of_payment_ck">Thanh toán chuyển khoản</string>
+    <string name="kind_of_payment_tmck">Hình thức thanh toán tiền mặt hoặc chuyển khoản</string>
+
+    <string name="content_null">Please input content first.</string>
+    <string name="success_connect">Successfully connected</string>
+    <string name="in_mau_test">In mẫu test</string>
+    <string name="ngat_ket_noi">Ngắt kết nối</string>
+    <!-- end -->
+</resources>

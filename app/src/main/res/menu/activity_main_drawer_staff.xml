@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Trang chủ"
+            ></item>
+    </group>
+    <!--<item android:title="Danh sách khách hàng">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_ds_telecom"-->
+                <!--android:icon="@drawable/ic_play_arrow_black_24dp"-->
+                <!--android:title="Hóa đơn viễn thông" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_ds_electric"-->
+                <!--android:icon="@drawable/ic_play_arrow_black_24dp"-->
+                <!--android:title="Hóa đơn tiền điện"-->
+                <!--android:visible="false"-->
+                <!--/>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_ds_water"-->
+                <!--android:icon="@drawable/ic_play_arrow_black_24dp"-->
+                <!--android:title="Hóa đơn tiền nước"-->
+                <!--android:visible="false"/>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_ds_environment"-->
+                <!--android:icon="@drawable/ic_play_arrow_black_24dp"-->
+                <!--android:title="Hóa đơn môi trường"-->
+                <!--android:visible="false"/>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_ds_television"-->
+                <!--android:icon="@drawable/ic_play_arrow_black_24dp"-->
+                <!--android:title="Hóa đơn truyền hình"-->
+                <!--android:visible="false"/>-->
+        <!--</menu>-->
+    <!--</item>-->
+    <item android:title="@string/text_system">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_reprint"
+                    android:icon="@drawable/ic_print"
+                    android:title="In lại biên lai" />
+                <item
+                    android:id="@+id/nav_statistics"
+                    android:icon="@drawable/statistics"
+                    android:title="Thống kê" />
+                <item
+                    android:id="@+id/nav_guide"
+                    android:icon="@drawable/ic_directions_black_24dp"
+                    android:title="Hướng dẫn sử dụng" />
+                <item
+                    android:id="@+id/nav_exit"
+                    android:icon="@drawable/ic_power_settings_new_black_24dp"
+                    android:title="Đăng xuất" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="@dimen/dip05"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dip05"
+        >
+        <TextView
+            android:id="@+id/txtNameService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:maxLines="3"
+            android:text="Nợ cước tháng 4"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_normal"
+            />
+        <TextView
+            android:id="@+id/txtPriceService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="1000000 VND"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/font_normal" />
+    </LinearLayout>
+</RelativeLayout>

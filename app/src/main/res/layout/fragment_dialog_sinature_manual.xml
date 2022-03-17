@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="400dp"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.vnpt.staffhddtpos58.ContentInvoiceActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border_default"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|top"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip03"
+                android:gravity="left|center_horizontal"
+                android:text="@string/signature_view_name"
+                android:textColor="@color/btn_blue_default"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_big" />
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_horizontal"
+                android:textColor="@color/black"
+                android:hint="@string/signature_view_name"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:background="@color/black"-->
+        <!--/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|top"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip03"
+                android:gravity="center|center_horizontal"
+                android:text="@string/signature_view_room"
+                android:textColor="@color/btn_blue_default"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_big" />
+
+            <EditText
+                android:id="@+id/txtNameRoomNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_horizontal"
+                android:textColor="@color/black"
+                android:hint="@string/signature_view_room"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/action_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textStyle="bold"
+            android:textColor="@color/black_overlay"
+            android:layout_alignParentLeft="true"
+            />
+        <Button
+            android:id="@+id/action_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_clear"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:id="@+id/action_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OK"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <!--<com.vnpt.view.SignatureView-->
+        <!--android:id="@+id/viewCusSingature"-->
+        <!--android:layout_width="255dp"-->
+        <!--android:layout_height="240dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="@drawable/border_default"-->
+        <!--/>-->
+
+    <com.vnpt.view.SignaturexView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:sign="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_default"
+        android:id="@+id/signature_view"
+        sign:enableSignature="true"
+        sign:penSize="3dp"
+        sign:penColor="@color/penRoyalBlue"/>
+</LinearLayout>
